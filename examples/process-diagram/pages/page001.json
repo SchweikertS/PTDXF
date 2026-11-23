@@ -1,0 +1,15 @@
+{
+  "page": 1,
+  "size": "A4",
+  "objects": [
+    {
+      "type": "text",
+      "content": "Process Diagram Example"
+    },
+    {
+      "type": "image",
+      "file": "images/process_diagram_water_treatment.jpg",
+      "border": true
+    }
+  ]
+}
