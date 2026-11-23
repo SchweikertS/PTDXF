@@ -1,12 +1,84 @@
-# Converter Overview
+# PTDXF Converter Architecture
 
-The converter consists of four stages.
+# Overview
+
+The PTDXF Converter transforms existing document formats into compliant PTDXF documents.
+
+The conversion process follows a strict security pipeline.
+
+The objective is not document reproduction alone.
+
+The objective is trusted document transformation and sanitization.
 
 ---
 
-## Stage 1
+# Core Workflow
 
-Document Import
+Input Document
+
+↓
+
+Import
+
+↓
+
+Extract Visible Content
+
+↓
+
+Sanitize Content
+
+↓
+
+Generate PTDXF
+
+↓
+
+Validate PTDXF
+
+↓
+
+Output PTDXF
+
+---
+
+# Design Principles
+
+## Principle 1
+
+Preserve visible information.
+
+---
+
+## Principle 2
+
+Remove prohibited content.
+
+---
+
+## Principle 3
+
+Reduce attack surface.
+
+---
+
+## Principle 4
+
+Generate predictable output.
+
+---
+
+## Principle 5
+
+Always produce specification-compliant PTDXF.
+
+---
+
+# Converter Components
+
+## Importer
+
+Reads source document.
 
 Examples:
 
@@ -16,48 +88,59 @@ Examples:
 
 ---
 
-## Stage 2
+## Extractor
 
-Content Extraction
-
-Extract:
+Extracts:
 
 - Text
 - Images
 - Page Structure
 
-Ignore:
-
-- Scripts
-- Macros
-- Unsupported Content
-
 ---
 
-## Stage 3
+## Sanitizer
 
-Sanitization
-
-Remove:
+Removes:
 
 - Hyperlinks
 - Metadata
-- Embedded Files
-- Active Content
+- Comments
+- Scripts
+- Macros
+- Attachments
 
 ---
 
-## Stage 4
+## Generator
 
-PTDXF Generation
-
-Generate:
+Creates:
 
 - manifest.json
-- page definitions
-- image definitions
-- security definition
+- page objects
+- text objects
+- image objects
+- security information
 
-Output:
+---
 
-PTDXF
+## Validator
+
+Validates generated PTDXF.
+
+Checks:
+
+- Structure
+- Object types
+- Security rules
+
+---
+
+# Output
+
+The generated PTDXF shall be:
+
+- Valid
+- Portable
+- Secure
+- Searchable
+- Auditable
