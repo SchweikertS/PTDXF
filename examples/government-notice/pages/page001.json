@@ -1,0 +1,14 @@
+{
+  "page": 1,
+  "size": "A4",
+  "objects": [
+    {
+      "type": "text",
+      "content": "Official Government Notice"
+    },
+    {
+      "type": "text",
+      "content": "This document contains official public information."
+    }
+  ]
+}
