@@ -1,0 +1,10 @@
+{
+  "page": 1,
+  "size": "A4",
+  "objects": [
+    {
+      "type": "text",
+      "content": "Hello PTDXF"
+    }
+  ]
+}
