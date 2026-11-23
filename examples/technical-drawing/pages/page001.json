@@ -1,0 +1,15 @@
+{
+  "page": 1,
+  "size": "A4",
+  "objects": [
+    {
+      "type": "text",
+      "content": "Technical Drawing Example"
+    },
+    {
+      "type": "image",
+      "file": "images/technical_drawing_motor_housing.jpg",
+      "border": true
+    }
+  ]
+}
