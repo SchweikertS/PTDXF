@@ -1,0 +1,15 @@
+{
+  "page": 1,
+  "size": "A4",
+  "objects": [
+    {
+      "type": "text",
+      "content": "Electrical Schematic Example"
+    },
+    {
+      "type": "image",
+      "file": "images/electrical_schematic_motor_control.jpg",
+      "border": true
+    }
+  ]
+}
